@@ -9,8 +9,8 @@ public class WordStatistics {
     private List<String> totalWords = new ArrayList<>();
     private String longestWord = "";
     /*input method that as long as terminate is not true (= that stop has not been typed)
-    counts all characters including spaces and dots, counts all inputs from
-    the user aka all lines of text. It then splits all the lines to count
+    counts all characters including spaces, dots, commas etc. Counts all inputs from
+    the user, aka all lines of text. It then splits all the lines to count
     the words that are all stored in an array and finally checks all the words to
     determine which one is the longest.*/
     public void inputs(String input) {

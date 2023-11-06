@@ -6,7 +6,7 @@ public class WordStatisticsMain {
         Scanner scan = new Scanner(System.in);
         WordStatistics results = new WordStatistics();
         String input;
-        //As long as terminate isn't initiated you type text and it gets stored
+        //As long as terminate isn't initiated you type text, and it gets stored
         //in the WordStatistics object.
         System.out.println("Ange ord eller skriv 'Stop' för att avsluta och få resultat.");
         while(!results.terminateTyped()) {

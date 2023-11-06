@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class WordStatisticsTest {
-    //Test för att räkna totala tecken i inputs
+    //Test to count the total amount of characters in the inputs.
     @Test
     public void testCountSigns() {
         WordStatistics wordStatistics = new WordStatistics();
@@ -12,7 +12,7 @@ public class WordStatisticsTest {
         int actual = wordStatistics.getCountSigns();
         assertEquals(expected,actual);
     }
-    //Test för att räkna total mängden inputs=rader ord.
+    //Test to count the total amount of inputs/lines of words.
     @Test
     public void testCountLines() {
         WordStatistics wordStatistics = new WordStatistics();
@@ -22,7 +22,7 @@ public class WordStatisticsTest {
         int actual = wordStatistics.getCountLines();
         assertEquals(expected,actual);
     }
-    //Test för att räkna totala mängden ord.
+    //Test to count the total amount of words from all inputs.
     @Test
     public void testWordCount() {
         WordStatistics wordStatistics = new WordStatistics();
