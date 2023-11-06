@@ -1,18 +1,18 @@
 package wordcounter;
 import java.util.*;
 public class WordStatistics {
-    //Integers, booleans, arrays och strings för att storea
-    // och sortera all information från inputs
+    //Integers, booleans, arrays and strings to store
+    //and sort all information from inputs
     private int countSigns = 0;
     private int countLines = 0;
     private boolean terminate = false;
     private List<String> totalWords = new ArrayList<>();
     private String longestWord = "";
-    /*input method som så länge terminate inte är sann (= att stop inte har skrivits)
-    räknar alla tecken inklusive mellanslag och punkter, räknar alla inputs från
-    användaren aka alla rader med text. Den splitar sedan alla raderna för att kunna
-    räkna orden som alla storas i en array och går slutligen igenom alla orden för
-    att komma fram till vilket det längsta är.*/
+    /*input method that as long as terminate is not true (= that stop has not been typed)
+    counts all characters including spaces and dots, counts all inputs from
+    the user aka all lines of text. It then splits all the lines to count
+    the words that are all stored in an array and finally checks all the words to
+    determine which one is the longest.*/
     public void inputs(String input) {
         if(!terminate) {
             if(!input.equalsIgnoreCase("Stop")) {
@@ -29,7 +29,7 @@ public class WordStatistics {
             }
         }
     }
-    //Get methods för att tillåta att informationen hämtas till andra objekt
+    //Get methods to allow that the information is retrieved to other objects.
     public int getCountSigns() {
         return countSigns;
     }

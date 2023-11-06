@@ -6,19 +6,19 @@ public class WordStatisticsMain {
         Scanner scan = new Scanner(System.in);
         WordStatistics results = new WordStatistics();
         String input;
-        //Så länge terminate inte är initierad så fyller man i text och det blir storade i inputs
-        //i WordStatistics objektet
+        //As long as terminate isn't initiated you type text and it gets stored
+        //in the WordStatistics object.
         System.out.println("Ange ord eller skriv 'Stop' för att avsluta och få resultat.");
         while(!results.terminateTyped()) {
             input = scan.nextLine();
             results.inputs(input);
         }
-        //Main hämtar de storade inputsen från WordStatistics o assignar dem till integers och Strings
+        //Main retrieves the stored inputs from WordStatistics and assigns them to integers och Strings
         int amountSigns = results.getCountSigns();
         int amountLines = results.getCountLines();
         int wordCount = results.getTotalWords();
         String longestWord = results.getLongestWord();
-        //Programet printar ut informationen
+        //The program prints out the information
         System.out.println("Du skrev " + amountLines + " rader.");
         System.out.println("De " + amountLines + " raderna innehöll " + wordCount + " ord.");
         System.out.println("De " + wordCount + " orden bestod av " + amountSigns + " tecken.");
